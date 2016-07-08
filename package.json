@@ -1,0 +1,28 @@
+{
+  "name": "ie-form",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "no",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "flareair",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "load-grunt-tasks": "*",
+    "normalize-css": "^2.3.1",
+    "time-grunt": "*"
+  }
+}

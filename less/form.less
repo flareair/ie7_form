@@ -1,0 +1,35 @@
+@button-padding-horizontal: 30px;
+@column-padding: 15px;
+
+.send-code-form {
+  margin-bottom: 15px;
+  .col-left {
+    overflow: hidden;
+    // padding-right: @column-padding;
+    input[type="text"] {
+    // need this for pixel perfect
+      box-sizing: border-box;
+      // dirty polyfill for ie7, server must send headers text/x-component with it, don't work in Codepen! https://github.com/Schepp/box-sizing-polyfill
+      *behavior: url(https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc);
+      width: 100%;
+    }
+    .form-label {
+      color: gray;
+      display: block;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+  .col-right {
+    float: right;
+    margin-left: 15px;
+    button[type="submit"] {
+      padding-left: @button-padding-horizontal; 
+      padding-right: @button-padding-horizontal; 
+    }
+  }
+}
+
+.rtl {
+  direction: rtl;
+}
