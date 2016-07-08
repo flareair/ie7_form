@@ -45,7 +45,7 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: ['less/{,*/}*.less'],
-        tasks: ['less','autoprefixer']
+        tasks: ['less','autoprefixer','cssmin']
       }
     }
   });
