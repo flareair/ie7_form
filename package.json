@@ -4,7 +4,7 @@
   "description": "no",
   "main": "no",
   "scripts": {
-    "test": "no"
+    "start": "./node_modules/grunt/bin/grunt build && node app.js"
   },
   "repository": {
     "type": "git",
