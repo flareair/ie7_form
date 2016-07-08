@@ -16,6 +16,8 @@
   "author": "flareair",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "*",
     "grunt": "*",
     "grunt-autoprefixer": "*",
     "grunt-contrib-cssmin": "*",
