@@ -8,7 +8,7 @@ Supports RTL and IE7.
 
 Tested with node.js 6.2+ on Ubuntu 14.04
 
-Browsers: IE7+, anover modern browsers
+Browsers: IE7+, another modern browsers
 
 ## To start:
 
