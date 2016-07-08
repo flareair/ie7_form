@@ -15,10 +15,21 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, ''));
 
-app.use(express.static(path.join(__dirname, 'public')));
+// static dir setup
+app.use(express.static(path.join(__dirname, 'public'), {
+    setHeaders: (res, path) => {
+
+        // set cusom headers for .htc polyfills
+        let ext = path.substr(path.length - 3);
+
+        if (ext === 'htc') {
+            res.set('Content-Type', 'text/x-component');
+        }
+    }
+}));
 
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     return res.render('index.html');
 });
 
@@ -26,4 +37,6 @@ app.get('/', (req, res) => {
 
 let server = http.createServer(app);
 
-server.listen(port);
+server.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+});
