@@ -10,7 +10,7 @@
     // need this for pixel perfect
       box-sizing: border-box;
       // dirty polyfill for ie7, server must send headers text/x-component with it, don't work in Codepen! https://github.com/Schepp/box-sizing-polyfill
-      *behavior: url(https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc);
+      *behavior: url(boxsizing.htc);
       width: 100%;
     }
     .form-label {
@@ -24,8 +24,8 @@
     float: right;
     margin-left: 15px;
     button[type="submit"] {
-      padding-left: @button-padding-horizontal; 
-      padding-right: @button-padding-horizontal; 
+      padding-left: @button-padding-horizontal;
+      padding-right: @button-padding-horizontal;
     }
   }
 }
